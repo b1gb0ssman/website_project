@@ -5,16 +5,27 @@ body {
 .home_header {
     display: flex;
     align-items: center;
-    height: 50px;
-    background-color: aqua;
+    height: 60px;
+    background-color: #0067ac;
 }
 
 .home_logo {
     display: flex;
+    padding: 10px;
+    margin: 10px;
+}
+
+.home_header a {
+    color: white;
+    text-decoration: none;
+    font-size: 18px;
 }
 
 .home_header-links {
+    display: flex;
     margin-left: auto;
+    padding: 10px;
+    gap: 20px;
 }
 .home_header-text {
     font-size: 42px;
