@@ -1,6 +1,10 @@
+body {
+    margin: 0;
+}
+
 .home_header {
     font-size: 42px;
     font-weight: 800;
     background-color: aqua;
-    margin: 0;
+    padding: 20px;
 }
