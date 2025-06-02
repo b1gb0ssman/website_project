@@ -67,9 +67,8 @@ body {
     background-color: #1d242b;
     border: solid 1px #a3ffd6;
     color: #a3ffd6;
-    min-width: 160px;
-    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
-    padding: 10px;
+    min-width: 90px;
+    padding: 8px 16px;
     z-index: 1;
 }
 
