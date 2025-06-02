@@ -1,7 +1,10 @@
+
+
 body {
     margin: 0;
-
+    font-family: 'Consolas';
 }
+
 
 .home_header {
     display: flex;
