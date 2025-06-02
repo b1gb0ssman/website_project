@@ -1,14 +1,23 @@
 @font-face {
-  font-family: 'Consolas';
-  src: url('/fonts/Consolas.woff2') format('woff2'),
-       url('/fonts/Consolas.woff') format('woff');
-  font-weight: normal;
+  font-family: 'JetBrains Mono';
+  src: url('./assets/fonts/variable/JetBrainsMono[wght].woff2') format('woff2-variations');
+  font-weight: 100 800;
   font-style: normal;
+  font-display: swap;
 }
+
+@font-face {
+  font-family: 'JetBrains Mono';
+  src: url('./assets/fonts/variable/JetBrainsMono-Italic[wght].woff2') format('woff2-variations');
+  font-weight: 100 800;
+  font-style: italic;
+  font-display: swap;
+}
+
 
 body {
     margin: 0;
-    font-family: 'Consolas', monospace;
+    font-family: 'JetBrains Mono', monospace;
 }
 
 .home_header {
