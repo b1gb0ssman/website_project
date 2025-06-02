@@ -19,6 +19,10 @@ body {
     font-family: 'JetBrains Mono', monospace;
 }
 
+
+/* header section */
+
+
 .home_header {
     display: flex;
     align-items: center;
@@ -44,22 +48,31 @@ body {
     margin-right: 60px;
 }
 
-.home_header-text,
-h1 {
-    font-size: 48px;
-    font-weight: 500;
-    padding: 60px 20px 20px 60px;
-    max-width: 350px;
+
+/* front page top container */ 
+
+.home_landing-container {
+    display: flex;
+    padding: 60px 0px 20px 60px;
+    height: 400px;
+    max-width: 100%;
     background-color: #1d242b;
     color: #a3ffd6;
 }
 
-.home_front-container {
+.home_header-text-container {}
+
+.home_header-text {
     display: flex;
-    height: 400px;
+    flex-direction: column;
+    font-size: 48px;
+    max-width: 30%;
+    font-weight: 500;
 }
 
-.cont2 {
-    background-color: #1d242b;
-    width: 100%;
+.home_landing-image {
+    align-items: flex-start
+    
 }
+
+
