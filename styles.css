@@ -31,7 +31,7 @@ body {
 }
 
 .home_logo {
-    padding-top: 10px;
+    padding-top: 20px;
     margin-left: 100px;
 }
 
@@ -44,14 +44,14 @@ body {
 .home_header-links-left {
     display: flex;
     margin-right: auto;
-    padding: 50px;
+    padding: 30px 0 20px 20px;
     gap: 30px;
 }
 
 .home_header-links-right {
     display: flex;
     margin-left: auto;
-    padding: 50px;
+    padding: 30px 100px 20px 20px;
     gap: 30px;
     margin-right: 50px;
 }
@@ -122,20 +122,24 @@ body {
     flex-direction: column;
     background-color: firebrick;
     width: 100%;
-    height: 400px;
-    padding-top: 50px;
+    height: 500px;
+    padding-top: 10px;
     justify-content: center;
     align-items: center;
-    gap: 40px;
 }
 
-.project-container-text {
+.home_project-container-text {
     text-align: center;
+    padding-bottom: 50px;
+    font-size: 20px;
 }
 
-.project-container-images {
+.home_project-container-row {
     display: flex;
     flex-direction: row;
+    gap: 40px;
+}
+.project-container-images {
     height: 250px;
     width: 250px;
     border: solid white 2px;
