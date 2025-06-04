@@ -85,7 +85,7 @@ body {
     flex-direction: row;
     justify-content: center;
     align-items: center;
-    padding: 50px;
+    padding-bottom: 70px;
     height: 400px;
     max-width: 100%;
     background-color: #1d242b;
@@ -120,14 +120,14 @@ body {
     background-color: #262c33;
     width: 100%;
     height: 500px;
-    padding: 10px 0;
+    padding-bottom: 200px;
     justify-content: center;
     align-items: center;
 }
 
 .home_project-container-text {
     text-align: center;
-    color: #b3a3ff;
+    color: whitesmoke;
     padding: 30px 0;
     font-size: 20px;
 }
@@ -141,5 +141,12 @@ body {
 .project-container-images {
     height: 325px;
     width: 375px;
-    border: solid white 2px;
+    border: solid #b3a3ff 2px;
+}
+
+.project-container-images p {
+    padding-top: 20px;
+    color: whitesmoke;
+    text-align: center;
+    font-size: 16px;
 }
