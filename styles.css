@@ -68,10 +68,13 @@ body {
     border: solid 1px #b3a3ff;
     min-width: 90px;
     color: #a3ffd6;
-    padding: 16px 16px;
+    padding: 10px 20px 10px 0px;
     z-index: 1;
 }
 
+.home_dropdown-items li {
+    padding: 4px;
+}
 .home_header-dropdown:hover .home_header-dropdown-content {
     display: block;
 }
