@@ -52,7 +52,7 @@ body {
     display: flex;
     margin-left: auto;
     padding: 30px 50px 20px 20px;
-    gap: 30px;
+    gap: 15px;
     margin-right: 20px;
 }
 
@@ -66,17 +66,22 @@ body {
     position: absolute;
     background-color: #1d242b;
     border: solid 1px #b3a3ff;
-    min-width: 90px;
+    min-width: 50px;
+    padding: 10px;
     color: #a3ffd6;
-    padding: 10px 20px 10px 0px;
     z-index: 1;
 }
 
-.home_dropdown-items li {
-    padding: 4px;
+a:hover {
+    text-shadow: whitesmoke 1px 0 5px;
 }
+
 .home_header-dropdown:hover .home_header-dropdown-content {
     display: block;
+}
+
+.home_header-dropdown > .home_header-projects {
+    padding: 0px 0px 0px 8px;
 }
 
 
