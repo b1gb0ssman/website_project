@@ -35,11 +35,12 @@ body {
     margin-left: 100px;
 }
 
-.home_header-icons {
+.home_header-link-item {
     background-color: #a3ffd6;
-    height: 20px;
-    width: 20px;
+    height: 24px;
+    width: 24px;
     border-radius: 10px;
+
 }
 
 .home_header a {
@@ -51,7 +52,7 @@ body {
 .home_header-links-left {
     display: flex;
     margin-right: auto;
-    padding: 30px 0 20px 20px;
+    padding: 30px 0 20px 0px;
     gap: 30px;
 }
 
