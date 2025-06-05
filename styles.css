@@ -37,14 +37,7 @@ body {
 
 .home_header-icons {
     display: flex;
-    gap: 5px;
-}
-
-.home_header-icons img {
-    background-color: #a3ffd6;
-    border-radius: 6px;
-    height: 23px;
-    width: 23px;
+    gap: 2px;
 }
 
 .home_header-icons a {
