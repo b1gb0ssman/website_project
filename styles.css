@@ -35,12 +35,20 @@ body {
     margin-left: 100px;
 }
 
-.home_header-link-item {
-    background-color: #a3ffd6;
-    height: 24px;
-    width: 24px;
-    border-radius: 10px;
+.home_header-icons {
+    display: flex;
+    gap: 5px;
+}
 
+.home_header-icons img {
+    background-color: #a3ffd6;
+    border-radius: 6px;
+    height: 23px;
+    width: 23px;
+}
+
+.home_header-icons a {
+    margin-top: 2px;
 }
 
 .home_header a {
