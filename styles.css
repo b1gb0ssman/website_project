@@ -154,6 +154,7 @@ a:hover {
     position: relative;
     margin-bottom: 0;
     padding-bottom: 0;
+    text-shadow: #1d242b 5px 5px 5px;
 }
 
 .home_biography-container img {
@@ -224,3 +225,14 @@ a:hover {
     text-align: center;
     font-size: 16px;
 }
+
+
+/* footer section */
+
+
+.home_footer {
+    display: flex;
+    height: 50px;
+    background-color: white;
+}
+
