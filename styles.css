@@ -92,6 +92,8 @@ a:hover {
 
 .home_header-downarrow {
     color: #a3ffd6;
+    margin-top: 3px;
+    padding-left: 4px;
 }
 
 .home_header-icons {
@@ -101,7 +103,6 @@ a:hover {
 
 .home_header-icons a {
     margin-top: 2px;
-    border-radius: 10px;
 } 
 
 
