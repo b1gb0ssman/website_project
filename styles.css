@@ -148,6 +148,7 @@ a:hover {
 
 /* biography */
 
+
 .home_biography-container {
     height: 800px;
     position: relative;
@@ -161,7 +162,7 @@ a:hover {
 
 .home_biography-overlay {
     position: absolute;
-    top: 40%;
+    top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
     font-size: 32px;
@@ -173,15 +174,15 @@ a:hover {
     padding-bottom: 50px;
 }
 
-/* 
+
 
 .home_biography-bodytext {
-    
+    font-size: 22px;
 } 
 
-*/
 
-.home_biography-container p {
+
+.home_biography-container p  {
     text-align: left;
 }
 
