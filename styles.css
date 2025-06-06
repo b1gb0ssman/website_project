@@ -167,6 +167,7 @@ a:hover {
     transform: translate(-50%, -50%);
     font-size: 32px;
     color: whitesmoke;
+    width: 45%;
 }
 
 .home_biography-container h2 {
@@ -174,13 +175,9 @@ a:hover {
     padding-bottom: 50px;
 }
 
-
-
 .home_biography-bodytext {
     font-size: 22px;
 } 
-
-
 
 .home_biography-container p  {
     text-align: left;
