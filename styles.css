@@ -230,9 +230,17 @@ a:hover {
 /* footer section */
 
 
-.home_footer {
+.home_footer-container {
+    height: 60px;
+    background-color:darkgray;
+    color: black;
+    margin: 0;
+
+}
+
+.home_footer-links {
     display: flex;
-    height: 50px;
-    background-color: white;
+    justify-content: center;
+    gap: 80px;
 }
 
