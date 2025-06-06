@@ -32,6 +32,7 @@ body, html {
     position: sticky;
     top: 0;
     padding-bottom: 10px;
+    opacity: 100%;
 
 /* this stops the screen flicker/tearing */
     backface-visibility: hidden;
@@ -147,7 +148,14 @@ a:hover {
 
 /* biography */
 
+.home_biography-container {
+    height: 600px;
 
+}
+
+.home_biography-container img {
+    opacity: 90%;
+}
 
 
 
