@@ -125,7 +125,7 @@ a:hover {
     max-width: 100%;
     background-image: linear-gradient(#1d242b, #a3ffd6);
     color: #f9f9f9;
-    text-shadow: #a3ffd6 2px 2px 2px;
+    text-shadow: black 2px 2px 2px;
 }
 
 .home_header-text {
