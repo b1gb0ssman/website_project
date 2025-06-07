@@ -158,11 +158,29 @@ a:hover {
     margin-bottom: 0;
     padding-bottom: 0;
     text-shadow: #1d242b 5px 5px 5px;
+    z-index: 0;
+    overflow: hidden;
 }
 
-.home_biography-container img {
-    opacity: 100%;
-    filter: blur(#7bc1fd 1px);
+.home_biography-container::before,
+.home_biography-container::after {
+    content: "";
+    position: absolute;
+    left: 0;
+    right: 0;
+    height: 100px;
+    z-index: 1;
+    pointer-events: none;
+}
+
+.home_biography-container::before {
+    top: 0;
+    background: linear-gradient(to bottom, rgba(123, 193, 253, 1), rgba(123, 193, 253, 0.5), transparent);
+}
+
+.home_biography-container::after {
+    bottom: 0;
+background: linear-gradient(to top, #062978, transparent);
 }
 
 .home_biography-overlay {
@@ -201,8 +219,6 @@ a:hover {
     padding-bottom: 200px;
     justify-content: center;
     align-items: center;
-    z-index: 0;
-    overflow: hidden;
 }
 
 .home_project-container-text {
