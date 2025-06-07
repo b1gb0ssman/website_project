@@ -225,7 +225,7 @@ a:hover {
 }
 
 .project-container-images img {
-    border-radius: 20px;
+    border-radius: inherit;
 }
 
 .project-container-images p {
