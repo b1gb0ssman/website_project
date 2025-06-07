@@ -193,7 +193,7 @@ a:hover {
 .home_project-container {
     display: flex;
     flex-direction: column;
-    background-color: #262c33;
+    background-image: linear-gradient(#b3a3ff, #262c33);
     width: 100%;
     height: 550px;
     padding-bottom: 200px;
