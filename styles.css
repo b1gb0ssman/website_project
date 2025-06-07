@@ -145,6 +145,7 @@ a:hover {
 .home_landing-image img {
     border-radius: 100px;
     border: #a3ffd6 2px solid;
+
 }
  
 
@@ -161,6 +162,7 @@ a:hover {
 
 .home_biography-container img {
     opacity: 100%;
+    filter: blur(0.2rem);
 }
 
 .home_biography-overlay {
