@@ -125,7 +125,7 @@ a:hover {
     max-width: 100%;
     background-image: linear-gradient(#1d242b, #a3ffd6);
     color: #f9f9f9;
-    text-shadow: black 2px 2px 2px;
+    text-shadow: black 4px 0px 4px;
 }
 
 .home_header-text {
@@ -241,8 +241,8 @@ a:hover {
 
 .home_footer-container {
     height: 60px;
-    background-color:darkgray;
-    color: black;
+    background-color: #1d242b;
+    color: #a3ffd6;
     margin: 0;
 
 }
