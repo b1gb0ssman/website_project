@@ -240,16 +240,17 @@ a:hover {
 
 
 .home_footer-container {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
     height: 60px;
+    padding: 0 20px;
     background-color: #1d242b;
     color: #a3ffd6;
-    margin: 0;
-
 }
 
-.home_footer-links {
-    display: flex;
-    justify-content: center;
-    gap: 80px;
+.home_footer-links a {
+    color: #a3ffd6;
 }
+
 
