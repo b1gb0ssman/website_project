@@ -20,3 +20,17 @@ myNumber += 3;
 
 let myNumber2 = "74";
 myNumber2 = Number(myNumber2) + 3;
+
+
+// increments and decrements can be applied before or after runtime e.g. the below will run myVar first, then store the increment after. 
+// this means that it will store 4 first, and then 5 the next time the variable is called
+
+let myVar = 4;
+myVar++;
+
+
+// the below will apply the increment as part of the same runtime, meaning the first runtime result will be 5
+
+let myLet = 4 
+++myLet;
+
