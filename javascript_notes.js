@@ -34,3 +34,6 @@ myVar++;
 let myLet = 4 
 ++myLet;
 
+const string = "The revolution will not be televised.";
+console.log(string);
+
