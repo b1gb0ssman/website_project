@@ -34,6 +34,9 @@ myVar++;
 let myLet = 4 
 ++myLet;
 
-const string = "The revolution will not be televised.";
-console.log(string);
 
+// It's possible to combine expressions inside a string using the ` (backtick) 
+
+const name = "Chris";
+const greeting = `Hello, ${name}`;
+console.log(greeting); 
