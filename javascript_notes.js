@@ -40,3 +40,14 @@ let myLet = 4
 const name = "Chris";
 const greeting = `Hello, ${name}`;
 console.log(greeting); 
+
+
+// you can use the replace() function to replace values
+// in the below, a variable is defined, and a 2nd variable uses replace() to replace the value with another definition (i.e. sausage)
+// this console.log will output I am a sausage
+
+const myText = "I am a string!"
+const newText = myText.replace("string", "sausage")
+
+console.log(newText)
+
