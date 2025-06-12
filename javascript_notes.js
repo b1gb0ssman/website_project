@@ -180,7 +180,6 @@ function getComputerChoice(min, max) {
 
 
 // added this as 2nd iteration - does not work. Always returns paper
-
     if (randomNumber === 1) {
         console.log("Rock");
     } else if (randomNumber === 2) {
