@@ -89,3 +89,11 @@ function capitalise(text) {
   let restOfName = text.slice(1);
   return firstLetter + restOfName;
 }
+
+
+// using negative indexes, we can slice the very last (or other) characters from strings
+// the below will always take the last character of the string and return that
+
+    function lastLetter(text) {
+        return text.slice(-1);
+    }
