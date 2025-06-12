@@ -169,3 +169,25 @@ let answer = parseInt(prompt("What number would you like to fizzbuzz upto?"));
             console.log(i)
         }
     }
+
+    
+// first iteration -> if 1, 3 is specified as the  min / max of the function then it will randomly output 1, 2 or 3
+
+function getComputerChoice(min, max) {
+
+    let randomNumber = Math.floor(Math.random() * max);
+    if (randomNumber <= 0); randomNumber++;
+
+
+// added this as 2nd iteration - does not work. Always returns paper
+
+    if (randomNumber === 1) {
+        console.log("Rock");
+    } else if (randomNumber === 2) {
+        console.log("Scissors")
+    } else {
+        console.log("Paper")
+    }
+    return randomNumber;
+    
+}
