@@ -151,9 +151,11 @@ let answer = parseInt(prompt("What number would you like to fizzbuzz upto?"));
         }
     }
 
-    
+
 // lastly, we can add the && conditional operator to check whether i is a number that is divisible by 3 AND 5, and if it is, return fizzbuzz
 // nest all of this together using else if and ending in else
+// IMPORTANT! - it's important to move the initial IF statement to the top, to ensure it checks this condition first
+// if not, it would return fizz or buzz before it would return fizzbuzz (as they would be higher in the order/specificity)
 
 
     for (let i = 1; i <= answer; i++) {
