@@ -71,64 +71,10 @@
 
 
 
-    // FIZZ BUZZ //
-
-    // When a user inputs a number
-    // Loop from 1 to the entered number
-    // If the current number is divisible by 3 then print "Fizz"
-    // If the current number is divisible by 5 then print "Buzz"
-    // If the current number is divisible by 3 and 5 then print "FizzBuzz"
-    // Otherwise print the current number
 
 
-  // the answer variable takes the input from the user via a prompt, and uses the parseInt() function to ensure it's an integer
 
-  let answer = parseInt(prompt("What number would you like to fizzbuzz upto?"));
-
-  // this for loop declares i as 1, and if i is LESS THAN OR EQUAL to the ANSWER, then increment the integer (i i.e. 1) by 1 (++)
-
-  for (let i = 1; 1 <= answer; i++) {
-    console.log(i)
-  }
-
-  // then we iterate on it further, adding the if conditional. If 3 divided by itself (modulo) has a remainder of 0, then print Fizz
-  // else print i
-
-  for (let i = 1; i <= answer; i++) {
-    if (i % 3 === 0) {
-      console.log("Fizz");
-    } else {
-      console.log(i)
-    }
-  }
-
-  // we then iterate on it further - if 5 modulo is 0, return buzz. If not, return the value of i
-
-  for (let i = 1; i <= answer; i++) {
-    if (i % 3 === 0) {
-      console.log("Fizz")
-    } else if (i % 5 === 0 ) {
-      console.log("Buzz") 
-    } else {
-      console.log(i)
-    }
-  }
-
-  // lastly, we can add the && conditional operator to check whether i is a number that is divisible by 3 AND 5, and if it is, return fizzbuzz
-  // nest all of this together using else if and ending in else
-
-
-  for (let i = 1; i <= answer; i++) {
-    if (i % 3 === 0 && i % 5 === 0) {
-      console.log("FizzBuzz");
-    } else if (i % 3 === 0) {
-      console.log("Fizz")
-    } else if (i % 5 === 0) {
-      console.log("Buzz")
-    } else {
-      console.log(i)
-    }
-  }
+ 
 
 
   </script>
