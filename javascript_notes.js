@@ -69,3 +69,13 @@ function multiply (number, number) {
 }
 
 
+
+// the below function first looks for the first character (chatAt - index 0) and converts it to uppercase
+// then it is concatenated with the input but starting from the 2nd character (index 1)
+// the result of the function is any string that is put as a value into the function has its first character capitalised
+
+function capitalise(text) {
+    return text.charAt(0).toUpperCase() + text.slice(1);
+}
+
+
