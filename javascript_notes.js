@@ -79,3 +79,13 @@ function capitalise(text) {
 }
 
 
+// below is a less tidy version, but is clearer
+// firstLetter variable is taking a slice of the value from indexes 0 - 1 (start, end)
+// IMPORTANT! - the 2nd value is NOT inclusive, meaning that the slice search will STOP at the 1st index, and not include it (meaning just one character will be sliced)
+// No end input is needed for restOfName, it will just slice FROM the 1st index until the end of the value
+
+function capitalise(text) {
+  let firstLetter = text.slice(0, 1).toUpperCase();
+  let restOfName = text.slice(1);
+  return firstLetter + restOfName;
+}
