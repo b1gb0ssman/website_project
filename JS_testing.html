@@ -58,7 +58,14 @@
     // }
 
 
+    function capitalise(text) {
 
+      let firstLetter = text.slice(0);
+      firstLetter = firstLetter.toUpperCase();
+      let restOfName = text.slice(1, 100);
+
+      return firstLetter + restOfName;
+    }
 
 
 

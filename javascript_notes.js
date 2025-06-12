@@ -52,6 +52,7 @@ const newText = myText.replace("string", "sausage")
 console.log(newText)
 
 
+
 // functions are called by inputting function() into the console (or calling it), providing a value inside the parantheses
 // the function below should be called by "add7()" - insert a value in between the parantheses. 
 
@@ -66,3 +67,5 @@ function add7(number) {
 function multiply (number, number) {
     return number * number;
 }
+
+
