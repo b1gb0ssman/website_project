@@ -64,7 +64,7 @@ function add7(number) {
 // the below function can be called with multiply() and providing a value in the parantheses
 // the output will be whatever two values are provided multiplied when the function is called
 
-function multiply (number, number) {
+function multiply(number, number) {
     return number * number;
 }
 
@@ -81,7 +81,7 @@ function capitalise(text) {
 
 // below is a less tidy version, but is clearer
 // firstLetter variable is taking a slice of the value from indexes 0 - 1 (start, end)
-// IMPORTANT! - the 2nd value is NOT inclusive, meaning that the slice search will STOP at the 1st index, and not include it (meaning just one character will be sliced)
+// IMPORTANT! - the 2nd value is NOT inclusive, meaning that the slice search will STOP at the 1st index (meaning just one character will be sliced)
 // No end input is needed for restOfName, it will just slice FROM the 1st index until the end of the value
 
 function capitalise(text) {
