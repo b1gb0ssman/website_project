@@ -210,4 +210,71 @@ function getComputerChoice() {
     
     return choice
 }
+
+
+// this THEORETICALLY works - i.e. this is the overall core functional logic written into code form
+// HOWEVER - it is actually non-functional/incorrect, because each if conditional will run individually
+// the key mistake here is thinking that because it was inside one function, it counted as ONE condition
+// instead, each if condition runs one after the other, giving 3 outputs into console.log()
+
+
+    function playGame() {
+        let humanChoice = getHumanChoice();
+        let computerChoice = getComputerChoice();
+
+        console.log("You chose: " + humanChoice);
+        console.log("The computer chose: " + computerChoice);
+
+        if (humanChoice === "Rock" && computerChoice === "Paper") {
+            console.log("The computer wins!")
+        } else if (humanChoice === "Rock" && computerChoice === "Scissors") {
+            console.log("You win!")
+        } else {
+            console.log("It's a draw.")
+        }
+
+        if (humanChoice === "Paper" && computerChoice === "Scissors") {
+            console.log("The computer wins!") 
+        } else if (humanChoice === "Paper" && computerChoice === "Rock") {
+            console.log("You win!")
+        } else {
+          console.log("It's a draw.")
+        }  
+        
+        if (humanChoice === "Scissors" && computerChoice === "Rock") {
+            console.log("The computer wins!")
+        } else if (humanChoice === "Scissors" && computerChoice === "Paper") {
+            console.log("You win!")
+        } else {
+          console.log("It's a draw.")
+        }
+    }
     
+
+
+// THIS is the correct version! 
+// it boils the logic into ONE if statement, providing one output depending on what is true or false
+// first, we take the easy out in the logic with the draw (if x equates exactly to y, its a draw)
+// unless the computer win conditions are true, then the computer wins
+// and if neither of those are true, the user must be the winner!
+
+                                 m
+    function playGame() {
+        let humanChoice = getHumanChoice();
+        let computerChoice = getComputerChoice();
+
+        console.log("You chose: " + humanChoice);                                   
+        console.log("The computer chose: " + computerChoice);
+
+        if (humanChoice === computerChoice) {
+            console.log("It's a draw")
+        } else if (
+            (humanChoice === "Rock" && computerChoice === "Paper") ||
+            (humanChoice === "Paper" && computerChoice === "Scissors") ||
+            (humanChoice === "Scissors" && computerChoice === "Rock") 
+        ) {
+            console.log("The computer wins!")
+        } else {
+            console.log("You win!")
+        }
+    }
