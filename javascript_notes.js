@@ -253,12 +253,12 @@ function getComputerChoice() {
 
 
 // THIS is the correct version! 
-// it boils the logic into ONE if statement, providing one output depending on what is true or false
+// it boils down the logic into ONE if statement, providing one output depending on what is true or false
 // first, we take the easy out in the logic with the draw (if x equates exactly to y, its a draw)
 // unless the computer win conditions are true, then the computer wins
 // and if neither of those are true, the user must be the winner
 
-                                 m
+                                 
     function playGame() {
         let humanChoice = getHumanChoice();
         let computerChoice = getComputerChoice();
