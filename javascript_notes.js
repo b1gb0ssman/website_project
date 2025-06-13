@@ -178,8 +178,10 @@ function getComputerChoice(min, max) {
     let randomNumber = Math.floor(Math.random() * max);
     if (randomNumber <= 0); randomNumber++;
 
+}
 
 // added this as 2nd iteration - does not work. Always returns paper
+
     if (randomNumber === 1) {
         console.log("Rock");
     } else if (randomNumber === 2) {
@@ -188,5 +190,24 @@ function getComputerChoice(min, max) {
         console.log("Paper")
     }
     return randomNumber;
+
+
+// this works - first it generates a random number, multiplies it by the amount of choices we need and adds 1 to make sure it's a whole number
+// then the choice variable is determined by the random number as a condition and returning whichever string has been assigned to the integer
+
+function getComputerChoice() {
+
+    let randomNumber = Math.floor(Math.random() * 3) + 1;
+    let choice;
+
+    if (randomNumber === 1) {
+        choice = "Rock"; 
+    } else if (randomNumber === 2) {
+        choice = "Paper";
+    } else {
+        choice = "Scissors";
+    }
     
+    return choice
 }
+    
