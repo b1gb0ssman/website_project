@@ -256,7 +256,7 @@ function getComputerChoice() {
 // it boils the logic into ONE if statement, providing one output depending on what is true or false
 // first, we take the easy out in the logic with the draw (if x equates exactly to y, its a draw)
 // unless the computer win conditions are true, then the computer wins
-// and if neither of those are true, the user must be the winner!
+// and if neither of those are true, the user must be the winner
 
                                  m
     function playGame() {
@@ -278,3 +278,8 @@ function getComputerChoice() {
             console.log("You win!")
         }
     }
+
+// IMPORTANT!
+// this function DOES NOT currently need a return, because we do not need to use the output of this function as a variable anywhere else
+// to iterate on the result of this function, I would need to add a new variable and replace the console.log() with it
+// then, I can return the output of that function to be used elsewhere in a different function
