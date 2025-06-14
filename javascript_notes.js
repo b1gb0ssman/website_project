@@ -259,7 +259,7 @@ function getComputerChoice() {
 // and if neither of those are true, the user must be the winner
 
                                  
-    function playGame() {
+    function gameDecision() {
         let humanChoice = getHumanChoice();
         let computerChoice = getComputerChoice();
 
@@ -283,3 +283,28 @@ function getComputerChoice() {
 // this function DOES NOT currently need a return, because we do not need to use the output of this function as a variable anywhere else
 // to iterate on the result of this function, I would need to add a new variable and replace the console.log() with it
 // then, I can return the output of that function to be used elsewhere in a different function
+
+
+// First, the humanScore needs to be stored OUTSIDE of the function, because otherwise it will reset to 0 every time the function is called
+// Declaring it in the global stack allows it to be amended via the function, but not reset to 0 
+// Further, for the output of gameDecision to be used it must be declared as a variable FIRST
+// Lastly, the console.log() uses the `` so that we can concatenate a variable (human & computer score) inside it
+
+    let humanScore = 0;
+    let computerScore = 0;
+
+
+    function overallScore() {
+
+        let result = gameDecision();
+
+        if (result === "The computer wins!") {
+            computerScore++;
+        } else if (result === "You win!") {
+            humanScore++;
+        } else {
+            console.log("Tie - play again!")
+        }
+        
+        console.log(`Score -> Human: ${humanScore} | Computer: ${computerScore}`);
+    }
