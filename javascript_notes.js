@@ -53,7 +53,7 @@ console.log(newText)
 
 
 
-// functions are called by inputting function() into the console (or calling it), providing a value inside the parantheses
+// functions are called by inputting function() into the console (or calling it), providing a value inside the parantheses (if it is to be used as a variable)
 // the function below should be called by "add7()" - insert a value in between the parantheses. 
 
 function add7(number) {
@@ -314,8 +314,9 @@ function getComputerChoice() {
 // So firstly, DO NOT forget to add empty parantheses if a function/method is being called (i.e. toUpperCase())
 // Secondly, in the while loop, each individual condition must be EXPLICITLY DEFINED. Originally it was while (humanAnswer !== Rock || Paper || Scissors).. 
 // Although that makes sense in English, it is interpreted differently in JS syntax
-// then, the prompt and text formatting are redeclared, and if the response is still not true (i.e. NOT a valid answer), it will go to the beginning of the loop again
-// if the new answer is true, it goes back to the beginning of the loop and tests the condition again. If it's a valid answer, the loop is closed
+// Then, the prompt and text formatting are redeclared
+// It will then go to the beginning of the loop. If the response is still not true (i.e. NOT a valid answer), go back to the loop declarations
+// If the new answer is true, it goes back to the beginning of the loop and tests the condition again. If it's a valid answer, the loop is closed
 
 
 
@@ -329,4 +330,123 @@ function getComputerChoice() {
     } 
 
     return humanAnswer;
+    }
+
+
+// this is the final function! (for now..)
+// this takes the humanScore & computerScore variables that were earlier declared in the global stack, and checks whether they are both < 5
+// if this condition is true, it calls the scoreCounter function, and inside that the previous function is called again, and so on.. effectively mimicking rounds!
+
+    function playGame() {
+
+    while (humanScore < 5 && computerScore < 5) {
+    console.log(`Score -> Human: ${humanScore} | Computer: ${computerScore}`);
+    scoreCounter();
+    }
+
+    if (humanScore === 5) {
+        alert("You win the game!");
+    } else {
+        alert("The computer wins the game!");
+    }
+    }
+
+
+// here's the entire structure of it, and the logic from bottom to top:
+
+// playGame() is called
+// It hits the while loop. Let's say human: 0, computer: 0
+// Inside the loop → calls scoreCounter()
+// scoreCounter() calls gameDecision()
+// gameDecision() calls getHumanChoice() → gets valid input
+// Then calls getComputerChoice() → picks randomly
+// Compares, then returns the result ("You win!", etc.)
+// Back in scoreCounter() → result is used to update scores
+// Returns to playGame() → loop continues
+
+
+    function getHumanChoice() {
+        let humanText = prompt("Choose: Rock, Paper or Scissors?");
+        let humanAnswer = humanText.charAt(0).toUpperCase() + humanText.slice(1).toLowerCase();
+
+        while (humanAnswer !== "Rock" && humanAnswer !== "Paper" && humanAnswer !== "Scissors") {
+            humanText = prompt(`${humanAnswer} is not a valid argument! Choose: Rock, Paper or Scissors?`);
+            humanAnswer = humanText.charAt(0).toUpperCase() + humanText.slice(1).toLowerCase();
+        } 
+
+        return humanAnswer;
+    }
+
+    function getComputerChoice() {
+
+        let randomNumber = Math.floor(Math.random() * 3) + 1;
+        let choice;
+
+        if (randomNumber === 1) {
+            choice = "Rock"; 
+        } else if (randomNumber === 2) {
+            choice = "Paper";
+        } else {
+            choice = "Scissors";
+        }
+
+        return choice
+    }
+    
+    function gameDecision() {
+        let humanChoice = getHumanChoice();
+        let computerChoice = getComputerChoice();
+
+        console.log("You chose: " + humanChoice);
+        console.log("The computer chose: " + computerChoice);
+
+        let decision;
+
+        if (humanChoice === computerChoice) {
+            decision = ("It's a draw");
+        } else if (
+            (humanChoice === "Rock" && computerChoice === "Paper") ||
+            (humanChoice === "Paper" && computerChoice === "Scissors") ||
+            (humanChoice === "Scissors" && computerChoice === "Rock") 
+        ) {
+            decision = ("The computer wins!");
+        } else {
+            decision = ("You win!");
+        }
+        return decision;
+    }
+
+
+    let humanScore = 0;
+    let computerScore = 0;
+
+
+    function scoreCounter() {
+
+        let result = gameDecision();
+
+        if (result === "The computer wins!") {
+            computerScore++;
+        } else if (result === "You win!") {
+            humanScore++;
+        } else {
+            console.log("Tie - play again!")
+        }
+        
+        return result
+    }
+
+    
+    function playGame() {
+
+        while (humanScore < 5 && computerScore < 5) {
+        console.log(`Score -> Human: ${humanScore} | Computer: ${computerScore}`);
+        scoreCounter();
+        }
+
+        if (humanScore === 5) {
+            alert("You win the game!");
+        } else {
+            alert("The computer wins the game!");
+        }
     }
