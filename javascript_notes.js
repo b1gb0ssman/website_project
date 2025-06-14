@@ -308,3 +308,25 @@ function getComputerChoice() {
         
         console.log(`Score -> Human: ${humanScore} | Computer: ${computerScore}`);
     }
+
+
+
+// So firstly, DO NOT forget to add empty parantheses if a function/method is being called (i.e. toUpperCase())
+// Secondly, in the while loop, each individual condition must be EXPLICITLY DEFINED. Originally it was while (humanAnswer !== Rock || Paper || Scissors).. 
+// Although that makes sense in English, it is interpreted differently in JS syntax
+// then, the prompt and text formatting are redeclared, and if the response is still not true (i.e. NOT a valid answer), it will go to the beginning of the loop again
+// if the new answer is true, it goes back to the beginning of the loop and tests the condition again. If it's a valid answer, the loop is closed
+
+
+
+    function getHumanChoice() {
+    let humanText = prompt("Choose: Rock, Paper or Scissors?");
+    let humanAnswer = humanText.charAt(0).toUpperCase() + humanText.slice(1).toLowerCase();
+
+    while (humanAnswer !== "Rock" && humanAnswer !== "Paper" && humanAnswer !== "Scissors") {
+        humanText = prompt("That is not a valid argument! Choose: Rock, Paper or Scissors?");
+        humanAnswer = humanText.charAt(0).toUpperCase() + humanText.slice(1).toLowerCase();
+    } 
+
+    return humanAnswer;
+    }
